@@ -120,12 +120,12 @@ target_link_libraries(AI_STEERING_PATHFINDING lib_engine)
 set(EXECUTABLES ${EXECUTABLES} AI_STEERING_PATHFINDING)
 
 # ## 8 - Decisions
-# file(GLOB_RECURSE SOURCES practical_8_decisions/*.cpp practical_8_decisions/*.h)
-# file(GLOB_RECURSE CMPNTS practical_8_decisions/components/*.cpp practical_8_decisions/components/*.h)
-# file(GLOB_RECURSE SCENES practical_8_decisions/scenes/*.cpp practical_8_decisions/scenes/*.h)
-# add_executable(PRACTICAL_8_DECISIONS ${SOURCES} ${CMPNTS} ${SCENES} ${RESOURCE_FILES})
-# target_link_libraries(PRACTICAL_8_DECISIONS lib_engine)
-# set(EXECUTABLES ${EXECUTABLES} PRACTICAL_8_DECISIONS)
+file(GLOB_RECURSE SOURCES ai_states_decisions/*.cpp ai_states_decisions/*.h)
+file(GLOB_RECURSE CMPNTS ai_states_decisions/components/*.cpp ai_states_decisions/components/*.h)
+file(GLOB_RECURSE SCENES ai_states_decisions/scenes/*.cpp ai_states_decisions/scenes/*.h)
+add_executable(AI_STATES_DECISIONS ${SOURCES} ${CMPNTS} ${SCENES} ${RESOURCE_FILES})
+target_link_libraries(AI_STATES_DECISIONS lib_engine)
+set(EXECUTABLES ${EXECUTABLES} AI_STATES_DECISIONS)
 
 # #@@@-
 
