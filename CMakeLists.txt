@@ -112,12 +112,12 @@ set(EXECUTABLES ${EXECUTABLES} PLATFORMER)
 #@@@-
 
 # ## 7 - AI Movement
-# file(GLOB_RECURSE SOURCES practical_7_steering/*.cpp practical_7_steering/*.h)
-# file(GLOB_RECURSE CMPNTS practical_7_steering/components/*.cpp practical_7_steering/components/*.h)
-# file(GLOB_RECURSE SCENES practical_7_steering/scenes/*.cpp practical_7_steering/scenes/*.h)
-# add_executable(PRACTICAL_7_STEERING ${SOURCES} ${CMPNTS} ${SCENES} ${RESOURCE_FILES})
-# target_link_libraries(PRACTICAL_7_STEERING lib_engine)
-# set(EXECUTABLES ${EXECUTABLES} PRACTICAL_7_STEERING)
+file(GLOB_RECURSE SOURCES ai_steering_pathfinding/*.cpp ai_steering_pathfinding/*.h)
+file(GLOB_RECURSE CMPNTS ai_steering_pathfinding/components/*.cpp ai_steering_pathfinding/components/*.h)
+file(GLOB_RECURSE SCENES ai_steering_pathfinding/scenes/*.cpp ai_steering_pathfinding/scenes/*.h)
+add_executable(AI_STEERING_PATHFINDING ${SOURCES} ${CMPNTS} ${SCENES} ${RESOURCE_FILES})
+target_link_libraries(AI_STEERING_PATHFINDING lib_engine)
+set(EXECUTABLES ${EXECUTABLES} AI_STEERING_PATHFINDING)
 
 # ## 8 - Decisions
 # file(GLOB_RECURSE SOURCES practical_8_decisions/*.cpp practical_8_decisions/*.h)
